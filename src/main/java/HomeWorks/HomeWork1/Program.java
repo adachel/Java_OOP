@@ -13,6 +13,7 @@ import java.util.ArrayList;
  * а из магазина - удаляется)
  */
 
+
 public class Program {
     /**
      * @apiNote метод добавления товара в корзину и удаления из каталога
