@@ -3,23 +3,25 @@ package HomeWorks.HomeWork1;
 import java.util.ArrayList;
 
 public class Shop {
-    private ArrayList<Category> categories;
+    private final ArrayList<Category> catalog;
 
-    public Shop() {this.categories = new ArrayList<>();}
-
-    public void addCategory(Category category){categories.add(category);}
-
-    public void printCatalog(){
-        for (Category category: categories){
-            System.out.println(category.getCategoryName());
-            ArrayList<Product> products = category.getProducts();
-            for (Product product: products){
-                System.out.println("- " + product.getProdName() + " - "
-                                        + product.getPrice() + " - "
-                                        + product.getRating());
-            }
-        }
+    public Shop() {
+        this.catalog = new ArrayList<>();
+    }
+    public ArrayList<Category> getCatalog() {
+        return catalog;
     }
 
+    /**
+     * @apiNote метод добавления категории в каталог
+     * @param category категория
+     */
+    public void addCategory(Category category){
+        this.catalog.add(category);}
+
+    @Override
+    public String toString() {
+        return "Каталог:" + "\n" + catalog;
+    }
 }
 

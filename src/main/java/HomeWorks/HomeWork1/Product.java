@@ -1,23 +1,20 @@
 package HomeWorks.HomeWork1;
 
 public class Product {
-    private String prodName;
+    private final String productName;
     private double price;
     private int rating;
 
-    public Product(String prodName, double price, int rating) {
-        this.prodName = prodName;
+    public Product(String productName, double price, int rating) {
+        this.productName = productName;
         this.price = price;
         this.rating = rating;
     }
-
-    public Product(String prodName) {
-        this.prodName = prodName;
-        this.price = 0;
-        this.rating = 0;
+    public Product(String productName) {
+        this.productName = productName;
     }
 
-    public String getProdName() {return prodName;}
+    public String getProductName() {return productName;}
 
     public double getPrice() {return price;}
 
@@ -25,6 +22,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Наименование: " + prodName + "; " + "цена: " + price + "; " + "рейтинг: " + rating;
+        return "Наименование: " + productName + "; " +
+                "цена: " + price + "; " +
+                "рейтинг: " + rating;
     }
 }

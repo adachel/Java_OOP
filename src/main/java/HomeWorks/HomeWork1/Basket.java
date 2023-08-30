@@ -4,13 +4,33 @@ import java.util.ArrayList;
 
 public class Basket {
 
-    private ArrayList<Product> prod;
+    private final ArrayList<Product> products;
 
-    public Basket() {this.prod = new ArrayList<>();}
+    public Basket() {
+        this.products = new ArrayList<>();
+    }
+    public ArrayList<Product> getProduct() {
+        return products;
+    }
 
-    public ArrayList<Product> getProd() {return prod;}
+    /**
+     * @apiNote метод добавление товара в корзину
+     * @param product товар
+     */
+    public void addProduct(Product product){
+        products.add(product);
+    }
 
-    public void addProduct(Product product){prod.add(product);}
-    public void removeProduct(Product product){prod.remove(product);}
+    /**
+     * @apiNote метод удаления товара из корзины
+     * @param product товар
+     */
+    public void removeProduct(Product product){
+        products.remove(product);
+    }
 
+    @Override
+    public String toString() {
+        return "" + products;
+    }
 }
