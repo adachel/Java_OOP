@@ -26,7 +26,6 @@ public class Athlete {
         } else return temp = 1;
     }
 
-
     @Override
     public String toString() {
         return "Участник " + name + " прыжок= " + jamp;
