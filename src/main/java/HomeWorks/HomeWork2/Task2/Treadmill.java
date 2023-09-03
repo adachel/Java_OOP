@@ -1,7 +1,7 @@
 package HomeWorks.HomeWork2.Task2;
 
 public class Treadmill {
-    private int length;
+    private int length; // todo длина дорожки
 
     public int getLength() {
         return length;
@@ -9,8 +9,5 @@ public class Treadmill {
 
     public Treadmill(int length) {
         this.length = length;
-    }
-
-    public Treadmill() {
     }
 }

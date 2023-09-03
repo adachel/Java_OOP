@@ -1,7 +1,7 @@
 package HomeWorks.HomeWork2.Task2;
 
 public class Wall {
-    private int height;
+    private int height; // todo высота стены
 
     public int getHeight() {
         return height;
@@ -9,8 +9,5 @@ public class Wall {
 
     public Wall(int height) {
         this.height = height;
-    }
-
-    public Wall() {
     }
 }

@@ -10,4 +10,5 @@ public class Cat extends Alive {
     public void jump() {
         System.out.println("Кот прыгает");
     }
+
 }

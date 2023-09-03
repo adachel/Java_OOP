@@ -16,10 +16,8 @@ public class Main {
         men1.metodRun(treadmill1);
         men1.metodJump(wall1);
 
-        Athlete men2 = new Athlete("Петр", 300, 1);
+        Athlete men2 = new Athlete("Петр", 300, 6);
         men2.metodRun(treadmill1);
         men2.metodJump(wall1);
-
-
     }
 }

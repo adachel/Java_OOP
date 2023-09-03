@@ -1,6 +1,6 @@
 package HomeWorks.HomeWork2.Task1;
 
-public class Robot extends Inanimate {
+public class Robot extends Creator {
     @Override
     public void run() {
         System.out.println("Робот бежит");

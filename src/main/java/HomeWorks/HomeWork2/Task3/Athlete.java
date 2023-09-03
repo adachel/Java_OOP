@@ -5,16 +5,7 @@ import HomeWorks.HomeWork2.Task2.Wall;
 public class Athlete {
     private String name;
     private int jamp;
-
     private int temp;
-
-    public int getTemp() {
-        return temp;
-    }
-
-//    public void setTemp(int temp) {
-//        this.temp = temp;
-//    }
 
     public Athlete(String name, int jamp) {
         this.name = name;
@@ -23,10 +14,18 @@ public class Athlete {
     public Athlete(int jamp) {
         this.jamp = jamp;
     }
+    /**
+     * @apiNote Метод сравнения прыжка участника и высоты препятствия
+     * @param sportsObstacle Высота препятствия
+     * @return "0" - препятствие веше, "1" - препятсвие ниже
+     */
     public int metodObstacle(SportsObstacle sportsObstacle){
-        if (this.jamp > sportsObstacle.getSizeObstacle()){
-            return temp = 1;
-        } else return temp = 0;
+        if (this.jamp <= sportsObstacle.getSizeObstacle()){
+            return temp = 0;
+        } else return temp = 1;
     }
-
+    @Override
+    public String toString() {
+        return "Участник " + name + " прыжок= " + jamp;
+    }
 }
