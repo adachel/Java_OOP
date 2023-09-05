@@ -11,7 +11,6 @@ public class EnGame extends AbstractGame {
         for (int i = 'a'; i <= 'z'; i++) {
             list.add(String.valueOf((char) i));
         }
-
         return list;
     }
 }

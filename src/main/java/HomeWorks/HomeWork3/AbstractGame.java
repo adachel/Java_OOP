@@ -1,6 +1,5 @@
 package HomeWorks.HomeWork3;
 
-
 import java.util.List;
 import java.util.Random;
 

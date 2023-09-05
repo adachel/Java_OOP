@@ -23,7 +23,4 @@ public interface Game {
      * @return текущий статус игрока 2
      */
     GameStatus getGameStatus();
-
-
-
 }
