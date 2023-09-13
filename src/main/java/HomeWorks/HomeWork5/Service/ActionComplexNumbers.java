@@ -3,7 +3,12 @@ package HomeWorks.HomeWork5.Service;
 import HomeWorks.HomeWork5.Data.ComplexNumber;
 
 public class ActionComplexNumbers implements Action<ComplexNumber> {
-
+    /**
+     * @apiNote Метод сложения комплексных чисел
+     * @param value1 первое число
+     * @param value2 второе число
+     * @return результaт сложения
+     */
     @Override
     public String addition(ComplexNumber value1, ComplexNumber value2) {
         double realPart = Double.parseDouble(String.valueOf(value1.getRealPart())) +
@@ -22,6 +27,12 @@ public class ActionComplexNumbers implements Action<ComplexNumber> {
         return result;
     }
 
+    /**
+     * @apiNote Метод вычитaния комплексных чисел
+     * @param value1 первое число
+     * @param value2 второе число
+     * @return результaт сложения
+     */
     public String subtraction(ComplexNumber value1, ComplexNumber value2) {
         double realPart = Double.parseDouble(String.valueOf(value1.getRealPart())) -
                 Double.parseDouble(String.valueOf(value2.getRealPart()));

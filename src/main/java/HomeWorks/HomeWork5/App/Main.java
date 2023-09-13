@@ -3,8 +3,10 @@ package HomeWorks.HomeWork5.App;
 import HomeWorks.HomeWork5.Controller.Controller;
 import HomeWorks.HomeWork5.Controller.Menu;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Menu start = new Menu();
         start.generalMenu();
 
