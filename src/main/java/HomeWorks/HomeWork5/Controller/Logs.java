@@ -1,4 +1,4 @@
-package HomeWorks.HomeWork5.View;
+package HomeWorks.HomeWork5.Controller;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

@@ -2,7 +2,6 @@ package HomeWorks.HomeWork5.Controller;
 
 import HomeWorks.HomeWork5.Data.ComplexNumber;
 import HomeWorks.HomeWork5.Data.RationalNumber;
-import HomeWorks.HomeWork5.View.Logs;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
