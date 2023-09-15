@@ -1,4 +1,4 @@
-package HomeWorks.HomeWork5.App;
+package HomeWorks.HomeWork6.App;
 
 import HomeWorks.HomeWork5.Controller.Menu;
 
